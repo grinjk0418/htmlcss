@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>회원가입</title>
 </head>
 <body>
   <h1>회원가입을 환영합니다</h1>
-  <form action="">
+  <form>
     <fieldset>
       <legend>사용자 정보</legend>
       <ul>
         <li>
-          <label for="id">아이디 </label>
-          <input type="text" name="id" id="id" placeholder="4자 ~ 10자 사이, 공백없이" required>
+          <label for="account">아이디 </label>
+          <input type="text" name="account" id="account" placeholder="4자 ~ 10자 사이, 공백없이" required>
         </li>
         <li>
           <label for="email">이메일 </label>
@@ -21,16 +21,23 @@
         </li>
         <li>
           <label for="password">비밀번호 </label>
-          <input type="text" name="password" id="password" placeholder="문자와 숫자, 특수 기호 포함" required>
+          <input 
+          type="password" 
+          name="password" 
+          id="password" 
+          placeholder="문자와 숫자, 특수 기호 포함" 
+          required
+          >
         </li>
         <li>
           <label for="password_check">비밀번호 확인 </label>
-          <input type="text" name="password_check" id="password_check" required>
+          <input type="password" name="password_check" id="password_check" required>
         </li>
         <li>
           <label for="accession">가입 경로 </label>
           <select name="accession" id="accession">
-            <option value="0">기타</option>
+            <option value="etc">기타</option>
+            <option value="suggest">추천</option>
           </select>
         </li>
         <li>
@@ -42,10 +49,10 @@
 
     <fieldset>
       <legend>이벤트와 새로운 소식</legend>
-      <input type="radio" name="mail" id="reception">
+      <input type="radio" name="mail" id="reception" value="1">
       <label for="reception">메일 수신</label>
-      <input type="radio" name="mail" id="receptionx">
-      <label for="receptionx">메일 수신 안 함</label>
+      <input type="radio" name="mail" id="receptionX" value="0" checked>
+      <label for="receptionX">메일 수신 안 함</label>
     </fieldset>
     <button type="submit">가입하기</button>
     <button type="reset">취소</button>
