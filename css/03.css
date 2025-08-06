@@ -1,7 +1,7 @@
 body {
   /* font-family : 글꼴을 지정하는 속성 */
-  /* font-family: "Black Han Sans", sans-serif; */
-  font-family: '궁서체', '맑은 고딕', '바탕';
+  font-family:  "Black Han Sans", sans-serif;
+  /* font-family: '궁서체', '맑은 고딕', '바탕'; */
 
   /* font-weight : 글자의 굵기를 지정하는 속성 (100 ~ 900) */
   font-weight: 400;
