@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.back-Container {
+  background-color: white;
+  padding: 20px;
+  margin: 0 auto;
+  width: 600px;
+  height: 650px;
+
+  background-image: url('../../img/sudal.jfif');
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 0 ;
+  background-size: 40%;
+}
+
+h1 {
+  background-color: darkgreen;
+  /* border: 3px solid red; */
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+h3 {
+  color: darkred;
+  margin: 10px 0 10px 50px;
+}
+
+p {
+  padding-left: 70px;
+}
+
