@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+.fieldset-bg-img {
+  background-image: url(../../img/UncleSam.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+}
+
+/* 배경 이미지만 투명도 줄때.. */
+/* .fieldset-bg-img {
+  position: relative;
+}
+.fieldset-bg-img::after {
+  background-image: url(../../img/UncleSam.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+} */
+
+
+.legend-title {
+  color: magenta;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.required-sign::before {
+  content: '*';
+  color: red;
+}
+
+.input-box {
+  margin-bottom: 10px;
+}
+
+.txa-request-memo {
+  width: 200px;
+  height: 120px;
+}
+
+label {
+  vertical-align: top;
+}
+
+input, textarea {
+  /* 배경 투명하게 하는거 */
+  background-color: transparent;
+}
+
+.focus-border:focus {
+  border: 3px solid red;
+  outline: none;
+}
+
+.chk-color:checked + label {
+  color: red;
+}
+
+.btn-submit {
+  position: relative;
+}
+
+.btn-submit:hover::after {
+  content: '내용을 다시 한 번 확인해 주세요.';
+  position: absolute;
+  width: 300px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  top: 0;
+  left: 60px;
+}

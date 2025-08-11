@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+fieldset {
+  width: 500px;
+  padding-left: 20px;
+  line-height: 40px;
+  background-image: url(../../img/UncleSam.jfif);
+  background-size: auto;
+}
+
+input, textarea {
+  background-color: transparent;
+}
+
+legend {
+  color: #ff00fb;
+  font-weight: 900;
+}
+
+.required-sign::before {
+  content: '*';
+  color: red;
+}
+
+.label-request {
+  vertical-align: top;
+  /* border: 1px solid red; */
+}
+
+input:focus {
+  border: 3px solid red;
+  outline: 0;
+}
+
+textarea:focus {
+  border: 3px solid red;
+  outline: 0;
+}
+
+input:checked + label {
+  color: red;
+}
+
+button:hover::after {
+  content: '내용을 다시 한번 확인해 주세요.';
+  background-color: black;
+  font-size: 1.5em;
+  color: white;
+  padding: 0;
+  margin: 0;
+}

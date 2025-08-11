@@ -1,0 +1,5 @@
+/* 가상요소는 대부분 before랑 after만 쓴다 */
+.required-sign::before {
+  content: '*';
+  color: red;
+}
