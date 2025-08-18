@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+header {
+  background-image: url('./img/img_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+
+}
+
+.header-h1 {
+  font-size: 50px;
+
+}
+
+.header-h3 {
+  
+}
+
+.header-btn {
+  width: 200px;
+  height: 50px;
+  background-color: goldenrod;
+  border: none;
+  color: white;
+}
+
+
+/* 카드부분 시작 */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  padding: 30px;
+  gap: 15px;
+}
+
+
+/* 카드배경에 글자 */
+.card-img p {
+  background-color: rgb(0, 0, 0, 0.6);
+  color: white;
+  /* padding-bottom: 20px; */
+  /* padding-left: 10px; */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: 900;
+  
+}
+
+
+.card {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #d0d0d0;
+  border-radius: 2%;
+}
+
+.card-img {
+  padding-top: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.card > h5 {
+  margin-bottom: 20px;
+}
+/* 카드부분 끝 */
+
+.card-btn {
+  width: 100%;
+  height: 50px;
+  background-color: goldenrod;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #333131;
+  color: white;
+  
+
+  width: 100vw;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+}
